@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <title>Travel Site Final Touches</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("subscribe-form").addEventListener("submit", function(event) {
-          event.preventDefault();
-          alert("Thank you for subscribing!");
-          // Add further processing here if needed, e.g., sending data to a server
-        });
-      });
-    </script>
 </head>
 <body>
     <nav class="container-fluid">
@@ -22,7 +13,9 @@
         </ul>
         <ul>
             <li><a href="#">Sign In</a></li>
-            <li><a href="#">Register</a><img src="https://source.unsplash.com/random/50x50?chatbot" alt="Chat AI" style="width: 30px; height: 30px; cursor: pointer; margin-left: 10px;" onclick="alert('Chatbot AI Assistant Coming Soon!');"></li>
+            <!-- Chatbot AI Assistant icon made smaller and placed next to Register -->
+            <li><a href="#">Register</a></li>
+            <li><img src="https://source.unsplash.com/random/50x50?chatbot" alt="Chat AI" style="width: 30px; height: 30px; cursor: pointer; margin-left: 10px;" onclick="alert('Chatbot AI Assistant Coming Soon!');"></li>
             <li><a href="#" role="button">Flights</a></li>
             <li><a href="#">Attractions</a></li>
             <li><a href="#">Stays</a></li>
@@ -67,7 +60,7 @@
         </section>
         <section>
             <h2>Subscribe for Updates</h2>
-            <form id="subscribe-form" action="#" method="post" style="text-align: center;">
+            <form action="#" method="post" style="text-align: center;">
                 <input type="email" placeholder="Your email address" required style="margin-right: 5px;">
                 <button type="submit">Subscribe</button>
             </form>
