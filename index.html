@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Travel Site Final Touches</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>TravelHub</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Sign In</a></li>
+            <!-- Chatbot AI Assistant icon made smaller and placed next to Register -->
+            <li><a href="#">Register</a></li>
+            <li><img src="https://source.unsplash.com/random/50x50?chatbot" alt="Chat AI" style="width: 30px; height: 30px; cursor: pointer; margin-left: 10px;" onclick="alert('Chatbot AI Assistant Coming Soon!');"></li>
+            <li><a href="#" role="button">Flights</a></li>
+            <li><a href="#">Attractions</a></li>
+            <li><a href="#">Stays</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+            <h2>Explore the World</h2>
+            <p>Embark on a journey that enriches your soul and broadens your horizons.</p>
+            <input type="search" placeholder="Where to next?" aria-label="Search destinations" style="width: 100%; margin-bottom: 1rem;">
+            <figure>
+                <img src="https://source.unsplash.com/random/800x600" alt="Travel imagery" />
+                <figcaption><a href="#" target="_blank">Discover More</a></figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Featured Destinations</h2>
+            <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                <!-- Existing destinations -->
+                <article>
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/random/800x600?paris" alt="Paris" /></a>
+                    <h3>Paris</h3>
+                </article>
+                <article>
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/random/800x600?kyoto" alt="Kyoto" /></a>
+                    <h3>Kyoto</h3>
+                </article>
+                <article>
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/random/800x600?newyork" alt="New York" /></a>
+                    <h3>New York</h3>
+                </article>
+                <!-- Additional destinations -->
+                <article>
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/random/800x600?london" alt="London" /></a>
+                    <h3>London</h3>
+                </article>
+                <article>
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/random/800x600?rome" alt="Rome" /></a>
+                    <h3>Rome</h3>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Subscribe for Updates</h2>
+            <form action="#" method="post" style="text-align: center;">
+                <input type="email" placeholder="Your email address" required style="margin-right: 5px;">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a>
+        </small>
+    </footer>
+</body>
+</html>
